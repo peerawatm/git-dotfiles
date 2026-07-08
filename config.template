@@ -1,0 +1,15 @@
+[core]
+    editor = nvim
+    autocrlf = input
+    ignorecase = false
+    hooksPath = ~/.config/git/hooks
+
+[init]
+    defaultBranch = main
+
+[alias]
+    st = status -sb
+    ap = add -p
+    d = diff
+    ds = diff --staged
+    cmv = commit -v

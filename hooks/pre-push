@@ -1,0 +1,9 @@
+#!/bin/sh
+# Detect force flags in the parent git process arguments
+parent_cmd=$(ps -o args= -p $PPID)
+
+if echo "$parent_cmd" | grep -qE -- '\-\-force|\-f|\+'; then
+    echo "Error: Force pushing is banned on all branches." >&2
+    exit 1
+fi
+exit 0
