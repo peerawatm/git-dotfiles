@@ -11,6 +11,6 @@
     sts = status -sb
     anp = "!git add -N . && git add -p"
     df = diff
-    dss = diff --staged
+    dfs = diff --staged
     cmv = commit -v
     lg = log --graph --all --abbrev-commit --date=iso --format=format:'%C(yellow)%h%C(auto)%d %C(cyan)[%ad] %C(green)[%G?] %C(magenta)[%an] %C(reset)%s' --shortstat
