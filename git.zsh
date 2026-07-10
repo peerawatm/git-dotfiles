@@ -37,7 +37,7 @@ git_guard() {
             fi
 
             if [[ "$sub1" == "checkout" || ("$sub1" == "reset" && "$sub2" == "--hard") ]]; then
-                echo "Error: git checkout is banned." >&2
+                echo "Error: git checkout and git reset --hard are banned." >&2
                 kill -s INT $$
                 return 1
             fi

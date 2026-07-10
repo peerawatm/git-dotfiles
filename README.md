@@ -11,7 +11,7 @@ My collection of git configuration in ~/.config/git.
 * [hooks/pre-commit](./hooks/pre-commit) - ban commit even merge conflicts happen 
 
 ## .zsh
-* [git.zsh](./git.zsh) - ban git checkout
+* [git.zsh](./git.zsh) - ban git checkout and git reset --hard
 
 ## gitignore
 * [ignore](./ingore)
