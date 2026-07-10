@@ -1,4 +1,5 @@
 #!/bin/sh
+
 # Detect force flags in the parent git process arguments
 parent_cmd=$(ps -o args= -p $PPID)
 

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# The first argument passed to the hook is the upstream branch we are rebasing onto
+upstream="$1"
+
+# Check if we are trying to rebase onto a protected branch
+if [ "$upstream" = "main" ] || [ "$upstream" = "master" ]; then
+    echo "Error: Rebasing directly onto public upstream '$upstream' is banned." >&2
+    exit 1
+fi
+exit 0
