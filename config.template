@@ -1,19 +1,21 @@
 [core]
-    editor = nvim
-    autocrlf = input
-    ignorecase = false
-    hooksPath = ~/.config/git/hooks
+    	editor = nvim
+   	autocrlf = input
+    	ignorecase = false
+    	hooksPath = ~/.config/git/hooks
+	excludesfile = ~/.config/git/ignore
+	attributesfile = ~/.config/git/attributes
 
 [init]
-    defaultBranch = main
+    	defaultBranch = main
 
 [alias]
-    sts = status -sb
-    anp = "!git add -N . && git add -p"
-    df = diff
-    dfs = diff --staged
-    cmv = commit -v
-    lg = log --graph --all --abbrev-commit --date=iso --format=format:'%C(yellow)%h%C(auto)%d %C(cyan)[%ad] %C(green)[%G?] %C(magenta)[%an] %C(reset)%s' --shortstat
+    	sts = status -sb
+	a = "!git add -N . && git add -p"
+	df = diff
+    	dfs = diff --staged
+    	cmv = commit -v
+    	lg = log --graph --all --abbrev-commit --date=iso --format=format:'%C(yellow)%h%C(auto)%d %C(cyan)[%ad] %C(green)[%G?] %C(magenta)[%an] %C(reset)%s' --shortstat
     
 [commit]
 	gpgsign = true
