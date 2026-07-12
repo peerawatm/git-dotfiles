@@ -14,7 +14,7 @@ My collection of git configuration in ~/.config/git.
 * [git.zsh](./git.zsh) - ban git checkout and git reset --hard
 
 ## gitignore
-* [ignore](./ingore)
+* [ignore](./ignore)
 
 ## gitattributes
 * [attributes](./attributes)
