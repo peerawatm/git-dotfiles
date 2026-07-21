@@ -6,6 +6,9 @@
 	excludesfile = ~/.config/git/ignore
 	attributesfile = ~/.config/git/attributes
 
+	# Require https://github.com/dandavison/delta
+	pager = delta
+
 [init]
     	defaultBranch = main
 

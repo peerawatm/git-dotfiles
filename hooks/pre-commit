@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Block unresolved merge conflict markers in staged files (accounting for the + in git diff)
+# Block commit when merge conflict markerts detected
 if git diff --cached | grep -qE '^\+(<<<<<<<|=======|>>>>>>>)'; then
     echo "Error: Unresolved merge conflict markers detected in your staged changes." >&2
     exit 1

@@ -1,9 +1,9 @@
 #!/bin/sh
 
-# The first argument passed to the hook is the upstream branch we are rebasing onto
+# Set current upstream branch
 upstream="$1"
 
-# Check if we are trying to rebase onto a protected branch
+# Check if the string of the upstream branch name are main or master then ban git rebase
 if [ "$upstream" = "main" ] || [ "$upstream" = "master" ]; then
     echo "Error: Rebasing directly onto public upstream '$upstream' is banned." >&2
     exit 1

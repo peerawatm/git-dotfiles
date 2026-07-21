@@ -1,6 +1,6 @@
 # Git-Dotfiles
 
-My collection of git configuration in ~/.config/git.
+My Git configurations in ~/.config/git.
 
 ## gitconfig
 * [config.template](./config.template)
@@ -15,6 +15,3 @@ My collection of git configuration in ~/.config/git.
 
 ## gitignore
 * [ignore](./ignore)
-
-## gitattributes
-* [attributes](./attributes)

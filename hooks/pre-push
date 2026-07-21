@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Detect force flags in the parent git process arguments
+# Detect force options when git push
 parent_cmd=$(ps -o args= -p $PPID)
 
 if echo "$parent_cmd" | grep -qE -- '\-\-force|\-f|\+'; then
