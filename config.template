@@ -13,12 +13,13 @@
     	defaultBranch = main
 
 [alias]
-    	sts = status -sb
+	sts = status -sb
 	a = "!git add -N . && git add -p"
 	df = diff
-    	dfs = diff --staged
-    	cmv = commit -v
-    	lg = log --graph --all --abbrev-commit --date=iso --format=format:'%C(yellow)%h%C(auto)%d %C(cyan)[%ad] %C(green)[%G?] %C(magenta)[%an] %C(reset)%s' --shortstat
-    
+	dfs = diff --staged
+	c = commit -v
+	l = ls-files
+	lg = log --graph --all --abbrev-commit --date=iso --format=format:'%C(yellow)%h%C(auto)%d %C(cyan)[%ad] %C(green)[%G?] %C(magenta)[%an] %C(reset)%s' --shortstat
+
 [commit]
 	gpgsign = true

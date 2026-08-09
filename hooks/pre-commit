@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# Block commit when merge conflict markerts detected
-if git diff --cached | grep -qE '^\+(<<<<<<<|=======|>>>>>>>)'; then
+# Block commit when merge conflict markers are detected
+if git diff --cached | grep -qE '^\+\s*(<<<<<<<|=======|>>>>>>>|\|\|\|\|\|\|\|)'; then
     echo "Error: Unresolved merge conflict markers detected in your staged changes." >&2
     exit 1
 fi
