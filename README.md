@@ -1,4 +1,4 @@
-# Git-Dotfiles
+# git-dotfiles
 
 My Git configurations in ~/.config/git.
 
@@ -13,5 +13,5 @@ My Git configurations in ~/.config/git.
 ## .zsh
 * [git.zsh](./git.zsh) - ban git checkout and git reset --hard
 
-## gitignore
+## .gitignore
 * [ignore](./ignore)
