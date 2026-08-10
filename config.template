@@ -23,3 +23,21 @@
 
 [commit]
 	gpgsign = true
+
+[gpg]
+	format = ssh
+
+[gpg "ssh"]
+	# allowedSignersFile = ~/.config/ssh/allowed_signers
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+
+[merge]
+	conflictstyle = zdiff3
+
+# [includeIf "gitdir:~/path/to/work/"]
+# 	path = ~/.config/git/config-work
