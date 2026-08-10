@@ -14,4 +14,4 @@ peerawatm's Git configurations in ~/.config/git.
 * [git.zsh](./git.zsh) - ban git checkout and git reset --hard
 
 ## .gitignore
-* [ignore](./ignore)
+* [gitignore](./gitignore)
