@@ -1,16 +1,16 @@
 # git-dotfiles
 
-My Git configurations in ~/.config/git.
+peerawatm's Git configurations in ~/.config/git.
 
-## gitconfig
-* [config.template](./config.template)
+## config
+* [config.template](./config.template) - core, init, alias, and commit
 
 ## hooks
 * [hooks/pre-push](./hooks/pre-push) - ban force push
 * [hooks/pre-rebase](./hooks/pre-rebase) - ban rebase on main or master branch
 * [hooks/pre-commit](./hooks/pre-commit) - ban commit when merge conflicts happen 
 
-## .zsh
+## git.zsh
 * [git.zsh](./git.zsh) - ban git checkout and git reset --hard
 
 ## .gitignore
