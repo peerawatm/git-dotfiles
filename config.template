@@ -1,25 +1,30 @@
 [core]
-    	editor = nvim
-   	autocrlf = input
-    	ignorecase = false
-    	hooksPath = ~/.config/git/hooks
+	editor = nvim
+	autocrlf = input
+	ignorecase = false
+	hooksPath = ~/.config/git/hooks
 	excludesfile = ~/.config/git/ignore
 	attributesfile = ~/.config/git/attributes
+	sshCommand = ssh -F ~/.config/ssh/config
 
 	# Require https://github.com/dandavison/delta
 	pager = delta
 
 [init]
-    	defaultBranch = main
+	defaultBranch = main
 
 [alias]
-	sts = status -sb
-	a = "!git add -N . && git add -p"
-	df = diff
-	dfs = diff --staged
+	a = "!git add --intent-to-add . && git add --patch"
+	b = branch --all
 	c = commit -v
 	l = ls-files
+	sts = status --short --branch
+	df = diff
+	dfs = diff --staged
 	lg = log --graph --all --abbrev-commit --date=iso --format=format:'%C(yellow)%h%C(auto)%d %C(cyan)[%ad] %C(green)[%G?] %C(magenta)[%an] %C(reset)%s' --shortstat
+
+[user]
+	signingkey = ~/.config/ssh/id_ed25519.pub
 
 [commit]
 	gpgsign = true
@@ -28,7 +33,7 @@
 	format = ssh
 
 [gpg "ssh"]
-	# allowedSignersFile = ~/.config/ssh/allowed_signers
+	allowedSignersFile = ~/.config/ssh/allowed_signers
 
 [interactive]
 	diffFilter = delta --color-only
